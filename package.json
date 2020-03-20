@@ -1,0 +1,25 @@
+{
+  "name": "libvirt-web-nodejs",
+  "version": "1.0.0",
+  "description": "A simple web interface based on [libVirt](https://libvirt.org/) and [nodejs](https://nodejs.org/).",
+  "private": true,
+  "main": "server.js",
+  "dependencies": {
+    "ppm-bin": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiab77/libvirt-web-nodejs.git"
+  },
+  "author": "Jiab77 <jonathan.barda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jiab77/libvirt-web-nodejs/issues"
+  },
+  "homepage": "https://github.com/Jiab77/libvirt-web-nodejs#readme"
+}
