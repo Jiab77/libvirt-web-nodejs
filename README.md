@@ -48,7 +48,9 @@ sudo apt install libvirt-bin virt-viewer libguestfs-tools nodejs npm
 sudo apt install libvirt-bin libguestfs-tools nodejs npm
 
 # Install nodejs modules
-npm install ppm-bin
+git clone https://github.com/Jiab77/libvirt-web-nodejs.git
+cd libvirt-web-nodejs
+npm install
 ```
 
 > I still need to validate the packages list so this might change later.
