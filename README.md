@@ -41,8 +41,11 @@ The project has been tested on [Pop_OS!](https://system76.com/pop), a Linux dist
 You should only need to install these packages:
 
 ```bash
-# Install dependencies
-sudo apt install libvirt-bin virt-viewer libguestfs nodejs npm
+# Install dependencies (desktop)
+sudo apt install libvirt-bin virt-viewer libguestfs-tools nodejs npm
+
+# Install dependencies (server)
+sudo apt install libvirt-bin libguestfs-tools nodejs npm
 
 # Install nodejs modules
 npm install ppm-bin
