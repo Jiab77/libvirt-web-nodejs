@@ -18,7 +18,7 @@ const exec = util.promisify(require('child_process').exec);
 const execFile = util.promisify(require('child_process').execFile);
 const ppmbin = require('ppm-bin');
 
-const hostname = '127.0.0.1';
+const hostname = process.env.LIBVIRT_WEB_HOST || '127.0.0.1';
 const port = process.env.LIBVIRT_WEB_PORT || 8001;
 const routes = ['/json', '/info', '/capture', '/filters', '/leases', '/machines', '/networks', '/pools', '/volumes'];
 const tools = {

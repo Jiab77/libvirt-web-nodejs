@@ -68,7 +68,10 @@ cd libvirt-web-nodejs
 node server.js
 ```
 
-Edit the `server.js` file to change the `listen` port or define the `LIBVIRT_WEB_PORT` environment variable.
+To configure the server:
+
+* Define the `LIBVIRT_WEB_HOST` to change the listening address.
+* Define the `LIBVIRT_WEB_PORT` to change the listening port.
 
 > `sudo` is not required to run the server. It is required only if you want to run the server on a port below **1024**.
 >
