@@ -95,9 +95,32 @@ main .ui.cards {
 	display: none;
 }
 
-.ui.segment, .ui.menu, .ui.table {
-	transition: background-color .8s, color .8s;
+/* Smoothie Charts */
+.charts {
+	border-radius: 3px;
+	/* width: 100%; */
 }
+.charts.large.screen.only {
+	display: block !important;
+}
+.charts.mobile.only {
+	display: none !important;
+}
+div.smoothie-chart-tooltip {
+	background: #444;
+	padding: 1em;
+	margin-top: 20px;
+	font-family: consolas;
+	color: white;
+	font-size: 10px;
+	pointer-events: none;
+	z-index: 9999999;
+}
+
+/* It's slow down the whole UI... */
+/* .ui.segment, .ui.menu, .ui.table {
+	transition: background-color .8s, color .8s;
+} */
 
 @media only screen and (max-width: 900px) {
 	/* body.pushable {
@@ -121,6 +144,13 @@ main .ui.cards {
 	.secondary.menu .header.mobile.only {
 		display: block !important;
 	}
+
+	.charts.large.screen.only {
+		display: none !important;
+	}
+	.charts.mobile.only {
+		display: block !important;
+	}
 }
 @media only screen and (max-width: 700px) {
 	/* body.pushable {
@@ -142,6 +172,13 @@ main .ui.cards {
 		display: none !important;
 	}
 	.secondary.menu .header.mobile.only {
+		display: block !important;
+	}
+
+	.charts.large.screen.only {
+		display: none !important;
+	}
+	.charts.mobile.only {
 		display: block !important;
 	}
 }
